@@ -1,0 +1,403 @@
+{
+  "type" : "record",
+  "name" : "incidents",
+  "doc" : "Sqoop import of incidents",
+  "fields" : [ {
+    "name" : "incident_number",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "incident_number",
+    "sqlType" : "2"
+  }, {
+    "name" : "exposure_number",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "exposure_number",
+    "sqlType" : "2"
+  }, {
+    "name" : "id",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "id",
+    "sqlType" : "2"
+  }, {
+    "name" : "address",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "address",
+    "sqlType" : "12"
+  }, {
+    "name" : "incident_date",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "incident_date",
+    "sqlType" : "12"
+  }, {
+    "name" : "call_number",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "call_number",
+    "sqlType" : "2"
+  }, {
+    "name" : "alarm_dttm",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "alarm_dttm",
+    "sqlType" : "12"
+  }, {
+    "name" : "arrival_dttm",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "arrival_dttm",
+    "sqlType" : "12"
+  }, {
+    "name" : "close_dttm",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "close_dttm",
+    "sqlType" : "12"
+  }, {
+    "name" : "city",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "city",
+    "sqlType" : "12"
+  }, {
+    "name" : "zipcode",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "zipcode",
+    "sqlType" : "12"
+  }, {
+    "name" : "battalion",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "battalion",
+    "sqlType" : "12"
+  }, {
+    "name" : "station_area",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "station_area",
+    "sqlType" : "12"
+  }, {
+    "name" : "box",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "box",
+    "sqlType" : "12"
+  }, {
+    "name" : "suppression_units",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "suppression_units",
+    "sqlType" : "2"
+  }, {
+    "name" : "suppression_personnel",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "suppression_personnel",
+    "sqlType" : "2"
+  }, {
+    "name" : "ems_units",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "ems_units",
+    "sqlType" : "2"
+  }, {
+    "name" : "ems_personnel",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "ems_personnel",
+    "sqlType" : "2"
+  }, {
+    "name" : "other_units",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "other_units",
+    "sqlType" : "2"
+  }, {
+    "name" : "other_personnel",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "other_personnel",
+    "sqlType" : "2"
+  }, {
+    "name" : "first_unit_on_scene",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "first_unit_on_scene",
+    "sqlType" : "12"
+  }, {
+    "name" : "estimated_property_loss",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "estimated_property_loss",
+    "sqlType" : "2"
+  }, {
+    "name" : "estimated_contents_loss",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "estimated_contents_loss",
+    "sqlType" : "2"
+  }, {
+    "name" : "fire_fatalities",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "fire_fatalities",
+    "sqlType" : "2"
+  }, {
+    "name" : "fire_injuries",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "fire_injuries",
+    "sqlType" : "2"
+  }, {
+    "name" : "civilian_fatalities",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "civilian_fatalities",
+    "sqlType" : "2"
+  }, {
+    "name" : "civilian_injuries",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "civilian_injuries",
+    "sqlType" : "2"
+  }, {
+    "name" : "number_of_alarms",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "number_of_alarms",
+    "sqlType" : "2"
+  }, {
+    "name" : "primary_situation",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "primary_situation",
+    "sqlType" : "12"
+  }, {
+    "name" : "mutual_aid",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "mutual_aid",
+    "sqlType" : "12"
+  }, {
+    "name" : "action_taken_primary",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "action_taken_primary",
+    "sqlType" : "12"
+  }, {
+    "name" : "action_taken_secondary",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "action_taken_secondary",
+    "sqlType" : "12"
+  }, {
+    "name" : "action_taken_other",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "action_taken_other",
+    "sqlType" : "12"
+  }, {
+    "name" : "detector_alerted_occupants",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "detector_alerted_occupants",
+    "sqlType" : "12"
+  }, {
+    "name" : "property_use",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "property_use",
+    "sqlType" : "12"
+  }, {
+    "name" : "area_of_fire_origin",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "area_of_fire_origin",
+    "sqlType" : "12"
+  }, {
+    "name" : "ignition_cause",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "ignition_cause",
+    "sqlType" : "12"
+  }, {
+    "name" : "ignition_factor_primary",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "ignition_factor_primary",
+    "sqlType" : "12"
+  }, {
+    "name" : "ignition_factor_secondary",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "ignition_factor_secondary",
+    "sqlType" : "12"
+  }, {
+    "name" : "heat_source",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "heat_source",
+    "sqlType" : "12"
+  }, {
+    "name" : "item_first_ignited",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "item_first_ignited",
+    "sqlType" : "12"
+  }, {
+    "name" : "human_factors_associated_with_ignition",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "human_factors_associated_with_ignition",
+    "sqlType" : "12"
+  }, {
+    "name" : "structure_type",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "structure_type",
+    "sqlType" : "12"
+  }, {
+    "name" : "structure_status",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "structure_status",
+    "sqlType" : "12"
+  }, {
+    "name" : "floor_of_fire_origin",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "floor_of_fire_origin",
+    "sqlType" : "2"
+  }, {
+    "name" : "fire_spread",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "fire_spread",
+    "sqlType" : "12"
+  }, {
+    "name" : "no_flame_spread",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "no_flame_spread",
+    "sqlType" : "12"
+  }, {
+    "name" : "number_of_floors_with_minimum_damage",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "number_of_floors_with_minimum_damage",
+    "sqlType" : "2"
+  }, {
+    "name" : "number_of_floors_with_significant_damage",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "number_of_floors_with_significant_damage",
+    "sqlType" : "2"
+  }, {
+    "name" : "number_of_floors_with_heavy_damage",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "number_of_floors_with_heavy_damage",
+    "sqlType" : "2"
+  }, {
+    "name" : "number_of_floors_with_extreme_damage",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "number_of_floors_with_extreme_damage",
+    "sqlType" : "2"
+  }, {
+    "name" : "detectors_present",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "detectors_present",
+    "sqlType" : "12"
+  }, {
+    "name" : "detector_type",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "detector_type",
+    "sqlType" : "12"
+  }, {
+    "name" : "detector_operation",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "detector_operation",
+    "sqlType" : "12"
+  }, {
+    "name" : "detector_effectiveness",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "detector_effectiveness",
+    "sqlType" : "12"
+  }, {
+    "name" : "detector_failure_reason",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "detector_failure_reason",
+    "sqlType" : "12"
+  }, {
+    "name" : "automatic_extinguishing_system_present",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "automatic_extinguishing_system_present",
+    "sqlType" : "12"
+  }, {
+    "name" : "automatic_extinguishing_sytem_type",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "automatic_extinguishing_sytem_type",
+    "sqlType" : "12"
+  }, {
+    "name" : "automatic_extinguishing_sytem_perfomance",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "automatic_extinguishing_sytem_perfomance",
+    "sqlType" : "12"
+  }, {
+    "name" : "automatic_extinguishing_sytem_failure_reason",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "automatic_extinguishing_sytem_failure_reason",
+    "sqlType" : "12"
+  }, {
+    "name" : "number_of_sprinkler_heads_operating",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "number_of_sprinkler_heads_operating",
+    "sqlType" : "2"
+  }, {
+    "name" : "supervisor_district",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "supervisor_district",
+    "sqlType" : "12"
+  }, {
+    "name" : "neighborhood_district",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "neighborhood_district",
+    "sqlType" : "12"
+  }, {
+    "name" : "point",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "point",
+    "sqlType" : "12"
+  }, {
+    "name" : "data_as_of",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "data_as_of",
+    "sqlType" : "12"
+  }, {
+    "name" : "data_loaded_at",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "data_loaded_at",
+    "sqlType" : "12"
+  } ],
+  "tableName" : "incidents"
+}
